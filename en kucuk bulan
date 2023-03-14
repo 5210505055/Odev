@@ -19,8 +19,8 @@ int myFunc()
     }
     printf("En kucuk : %d",en_kucuk);//1 kez
     return 0;// 1 kez
-    // Toplam = 2n**2 + 4n + 6
-    // T(n) = O(n**2)
+    // Toplam = 2n^2 + 4n + 6
+    // T(n) = O(n^2)
 }
 int main()
 {
