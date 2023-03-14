@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct student
+{
+    char ad [15],soyad[20], bolum[30];
+    char num[10], sinif[4],fak[30];
+
+};
+
+int main()
+{
+    struct student student1;
+
+    char ad_1[15], soyad_1[20], bolum_1[30];
+    char num_1 [10], sinif_1 [4], fak_1[30];
+
+    printf("Ad : "),gets(ad_1);
+    strcpy(student1.ad, ad_1);
+    printf("Soyad : "), gets(soyad_1);
+    strcpy(student1.soyad, soyad_1);
+    printf("Bolum : "),gets(bolum_1);
+    strcpy(student1.bolum, bolum_1);
+    printf("Fakulte : "),gets(fak_1);
+    strcpy(student1.fak, fak_1);
+    printf("Ogrenci Numarasi : "),gets(num_1);
+    strcpy(student1.num, num_1);
+    printf("Sinif :"),gets(sinif_1);
+    strcpy(student1.sinif, sinif_1);
+
+    printf("\n-------------------------\n");
+    printf("Adi Soyadi       :%s %s\n",student1.ad, student1.soyad);
+    printf("Bolum            :%s\n",student1.bolum);
+    printf("Fakulte          :%s\n",student1.fak);
+    printf("Ogrenci Numarasi :%s\n",student1.num);
+    printf("Sinif            :%s\n",student1.sinif);
+
+
+    return 0;
+}
