@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+int myFunc()
+{
+    int a [10], uzun, en_kucuk; // 1 kez
+    printf("Dizinin uzunlugunu girin : "),scanf("%i",&uzun); // 1 kez
+    printf("Elemanlari girin : "); //1 kez
+    for (int i = 0; i < uzun; i++)//n+1 kez
+    {
+        scanf("%d",&a[i]);//n kez
+    }
+    en_kucuk = a[0]; // 1 kez
+    for (int i = 1; i <uzun; i++) //n kez
+    {
+        if (en_kucuk > a[i])// n*(n+1) kez
+        {
+            en_kucuk = a[i]; // n*n kez
+        }
+    }
+    printf("En kucuk : %d",en_kucuk);//1 kez
+    return 0;// 1 kez
+    // Toplam = 2n**2 + 4n + 6
+    // T(n) = O(n**2)
+}
+int main()
+{
+   myFunc();
+}
